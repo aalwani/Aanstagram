@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FA3F99A1D188E3500364F5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA3F9991D188E3500364F5F /* AppDelegate.swift */; };
+		3FA3F99C1D188E3500364F5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA3F99B1D188E3500364F5F /* ViewController.swift */; };
+		3FA3F99F1D188E3500364F5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA3F99D1D188E3500364F5F /* Main.storyboard */; };
+		3FA3F9A11D188E3500364F5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FA3F9A01D188E3500364F5F /* Assets.xcassets */; };
+		3FA3F9A41D188E3500364F5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA3F9A21D188E3500364F5F /* LaunchScreen.storyboard */; };
+		3FA3F9AF1D188E3500364F5F /* AanstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA3F9AE1D188E3500364F5F /* AanstagramTests.swift */; };
+		3FA3F9BA1D188E3500364F5F /* AanstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA3F9B91D188E3500364F5F /* AanstagramUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FA3F9AB1D188E3500364F5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FA3F98E1D188E3500364F5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FA3F9951D188E3500364F5F;
+			remoteInfo = Aanstagram;
+		};
+		3FA3F9B61D188E3500364F5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FA3F98E1D188E3500364F5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FA3F9951D188E3500364F5F;
+			remoteInfo = Aanstagram;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3FA3F9961D188E3500364F5F /* Aanstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aanstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FA3F9991D188E3500364F5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FA3F99B1D188E3500364F5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3FA3F99E1D188E3500364F5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FA3F9A01D188E3500364F5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FA3F9A31D188E3500364F5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FA3F9A51D188E3500364F5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FA3F9AA1D188E3500364F5F /* AanstagramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AanstagramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FA3F9AE1D188E3500364F5F /* AanstagramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AanstagramTests.swift; sourceTree = "<group>"; };
+		3FA3F9B01D188E3500364F5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FA3F9B51D188E3500364F5F /* AanstagramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AanstagramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FA3F9B91D188E3500364F5F /* AanstagramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AanstagramUITests.swift; sourceTree = "<group>"; };
+		3FA3F9BB1D188E3500364F5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FA3F9931D188E3500364F5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FA3F9A71D188E3500364F5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FA3F9B21D188E3500364F5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FA3F98D1D188E3500364F5F = {
+			isa = PBXGroup;
+			children = (
+				3FA3F9981D188E3500364F5F /* Aanstagram */,
+				3FA3F9AD1D188E3500364F5F /* AanstagramTests */,
+				3FA3F9B81D188E3500364F5F /* AanstagramUITests */,
+				3FA3F9971D188E3500364F5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FA3F9971D188E3500364F5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FA3F9961D188E3500364F5F /* Aanstagram.app */,
+				3FA3F9AA1D188E3500364F5F /* AanstagramTests.xctest */,
+				3FA3F9B51D188E3500364F5F /* AanstagramUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FA3F9981D188E3500364F5F /* Aanstagram */ = {
+			isa = PBXGroup;
+			children = (
+				3FA3F9991D188E3500364F5F /* AppDelegate.swift */,
+				3FA3F99B1D188E3500364F5F /* ViewController.swift */,
+				3FA3F99D1D188E3500364F5F /* Main.storyboard */,
+				3FA3F9A01D188E3500364F5F /* Assets.xcassets */,
+				3FA3F9A21D188E3500364F5F /* LaunchScreen.storyboard */,
+				3FA3F9A51D188E3500364F5F /* Info.plist */,
+			);
+			path = Aanstagram;
+			sourceTree = "<group>";
+		};
+		3FA3F9AD1D188E3500364F5F /* AanstagramTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FA3F9AE1D188E3500364F5F /* AanstagramTests.swift */,
+				3FA3F9B01D188E3500364F5F /* Info.plist */,
+			);
+			path = AanstagramTests;
+			sourceTree = "<group>";
+		};
+		3FA3F9B81D188E3500364F5F /* AanstagramUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3FA3F9B91D188E3500364F5F /* AanstagramUITests.swift */,
+				3FA3F9BB1D188E3500364F5F /* Info.plist */,
+			);
+			path = AanstagramUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FA3F9951D188E3500364F5F /* Aanstagram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FA3F9BE1D188E3500364F5F /* Build configuration list for PBXNativeTarget "Aanstagram" */;
+			buildPhases = (
+				3FA3F9921D188E3500364F5F /* Sources */,
+				3FA3F9931D188E3500364F5F /* Frameworks */,
+				3FA3F9941D188E3500364F5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Aanstagram;
+			productName = Aanstagram;
+			productReference = 3FA3F9961D188E3500364F5F /* Aanstagram.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FA3F9A91D188E3500364F5F /* AanstagramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FA3F9C11D188E3500364F5F /* Build configuration list for PBXNativeTarget "AanstagramTests" */;
+			buildPhases = (
+				3FA3F9A61D188E3500364F5F /* Sources */,
+				3FA3F9A71D188E3500364F5F /* Frameworks */,
+				3FA3F9A81D188E3500364F5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FA3F9AC1D188E3500364F5F /* PBXTargetDependency */,
+			);
+			name = AanstagramTests;
+			productName = AanstagramTests;
+			productReference = 3FA3F9AA1D188E3500364F5F /* AanstagramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3FA3F9B41D188E3500364F5F /* AanstagramUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FA3F9C41D188E3500364F5F /* Build configuration list for PBXNativeTarget "AanstagramUITests" */;
+			buildPhases = (
+				3FA3F9B11D188E3500364F5F /* Sources */,
+				3FA3F9B21D188E3500364F5F /* Frameworks */,
+				3FA3F9B31D188E3500364F5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FA3F9B71D188E3500364F5F /* PBXTargetDependency */,
+			);
+			name = AanstagramUITests;
+			productName = AanstagramUITests;
+			productReference = 3FA3F9B51D188E3500364F5F /* AanstagramUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FA3F98E1D188E3500364F5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Aanya Alwani";
+				TargetAttributes = {
+					3FA3F9951D188E3500364F5F = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					3FA3F9A91D188E3500364F5F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 3FA3F9951D188E3500364F5F;
+					};
+					3FA3F9B41D188E3500364F5F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 3FA3F9951D188E3500364F5F;
+					};
+				};
+			};
+			buildConfigurationList = 3FA3F9911D188E3500364F5F /* Build configuration list for PBXProject "Aanstagram" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FA3F98D1D188E3500364F5F;
+			productRefGroup = 3FA3F9971D188E3500364F5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FA3F9951D188E3500364F5F /* Aanstagram */,
+				3FA3F9A91D188E3500364F5F /* AanstagramTests */,
+				3FA3F9B41D188E3500364F5F /* AanstagramUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FA3F9941D188E3500364F5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FA3F9A41D188E3500364F5F /* LaunchScreen.storyboard in Resources */,
+				3FA3F9A11D188E3500364F5F /* Assets.xcassets in Resources */,
+				3FA3F99F1D188E3500364F5F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FA3F9A81D188E3500364F5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FA3F9B31D188E3500364F5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FA3F9921D188E3500364F5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FA3F99C1D188E3500364F5F /* ViewController.swift in Sources */,
+				3FA3F99A1D188E3500364F5F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FA3F9A61D188E3500364F5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FA3F9AF1D188E3500364F5F /* AanstagramTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FA3F9B11D188E3500364F5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FA3F9BA1D188E3500364F5F /* AanstagramUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FA3F9AC1D188E3500364F5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FA3F9951D188E3500364F5F /* Aanstagram */;
+			targetProxy = 3FA3F9AB1D188E3500364F5F /* PBXContainerItemProxy */;
+		};
+		3FA3F9B71D188E3500364F5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FA3F9951D188E3500364F5F /* Aanstagram */;
+			targetProxy = 3FA3F9B61D188E3500364F5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FA3F99D1D188E3500364F5F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FA3F99E1D188E3500364F5F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3FA3F9A21D188E3500364F5F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FA3F9A31D188E3500364F5F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FA3F9BC1D188E3500364F5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3FA3F9BD1D188E3500364F5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FA3F9BF1D188E3500364F5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Aanstagram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.Aanstagram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3FA3F9C01D188E3500364F5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Aanstagram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.Aanstagram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3FA3F9C21D188E3500364F5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AanstagramTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.AanstagramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aanstagram.app/Aanstagram";
+			};
+			name = Debug;
+		};
+		3FA3F9C31D188E3500364F5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AanstagramTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.AanstagramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aanstagram.app/Aanstagram";
+			};
+			name = Release;
+		};
+		3FA3F9C51D188E3500364F5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AanstagramUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.AanstagramUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Aanstagram;
+			};
+			name = Debug;
+		};
+		3FA3F9C61D188E3500364F5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AanstagramUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.AanstagramUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Aanstagram;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FA3F9911D188E3500364F5F /* Build configuration list for PBXProject "Aanstagram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FA3F9BC1D188E3500364F5F /* Debug */,
+				3FA3F9BD1D188E3500364F5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FA3F9BE1D188E3500364F5F /* Build configuration list for PBXNativeTarget "Aanstagram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FA3F9BF1D188E3500364F5F /* Debug */,
+				3FA3F9C01D188E3500364F5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3FA3F9C11D188E3500364F5F /* Build configuration list for PBXNativeTarget "AanstagramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FA3F9C21D188E3500364F5F /* Debug */,
+				3FA3F9C31D188E3500364F5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3FA3F9C41D188E3500364F5F /* Build configuration list for PBXNativeTarget "AanstagramUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FA3F9C51D188E3500364F5F /* Debug */,
+				3FA3F9C61D188E3500364F5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FA3F98E1D188E3500364F5F /* Project object */;
+}
