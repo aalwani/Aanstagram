@@ -14,7 +14,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
 {
     let HeaderViewIdentifier = "TableViewHeaderView"
     var yayProfile: Bool = false
-    var usersss = []
+    var usersss: [PFObject] = []
     @IBOutlet weak var profilePicture: PFImageView!
     @IBOutlet weak var welcomeLabel: UILabel!
     var infinite: Bool = false
@@ -24,14 +24,16 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     @IBOutlet weak var userna: UILabel!
     @IBOutlet weak var logOutLabel: UIButton!
     @IBOutlet weak var tableView: UITableView!
-    
+    var userr: PFUser = PFUser.currentUser()!
+   
+
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
         check()
-        userna.text = PFUser.currentUser()?.username as! String!
-        self.welcomeLabel.text = self.welcomeLabel.text! + " " + userna.text! + "!"
+        userna.text = PFUser.currentUser()!.username as! String!
+        self.welcomeLabel.text = userr.username! + "'s Profile!"
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(refreshControlAction(_:)), forControlEvents: UIControlEvents.ValueChanged)
         
@@ -55,22 +57,19 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     func check()
     {
         
-        if(yayProfile)
-        {
-             var currentUser = PFUser.currentUser()?.username
-       
+            var currentUser = userr.username
             let query = PFQuery(className: "User")
             query.orderByDescending("createdAt")
             query.whereKey("username", equalTo: currentUser!)
-            query.findObjectsInBackgroundWithBlock { (us: [PFObject]?, error: NSError?) -> Void in
+            query.findObjectsInBackgroundWithBlock
+                { (us: [PFObject]?, error: NSError?) -> Void in
                 if let us = us
                 {
-                    print(us)
-                     self.usersss = us
-                     print("hiiieee")
-                   
-                   
-                    print(self.usersss)
+                    self.usersss = us
+                    let u = self.usersss[0] as! PFObject
+                    self.profilePicture.file = u["media"] as! PFFile
+                    self.profilePicture.loadInBackground()
+
                     
                 }
                 else
@@ -78,24 +77,19 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
                     print(error?.localizedDescription)
                     print("sozz no pic 4 u")
                 }
-                print("hiiiiii")
-                print(self.usersss)
-                print("hiiiiii")
+               //            print("???")
+
+                    
+            
+              }
     }
-//            print("???")
-//            print(self.userss)
-//            let u = userss[0] as! PFObject
-//            print(u)
-//            print("ttt")
-//            profilePicture.file = u["media"] as! PFFile
-//            profilePicture.loadInBackground()
+    
+    
+        
             
             
-            
-            
-            
-    }
-    }
+
+    
     
     
     
@@ -112,8 +106,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         let query = PFQuery(className: "Post")
         query.orderByDescending("createdAt")
         query.includeKey("author")
-        let users = PFUser.currentUser()
-        query.whereKey("author", equalTo: users!)
+        query.whereKey("author", equalTo: userr)
         
         if(!infinite)
         {
@@ -167,10 +160,9 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("ProfilePostCell", forIndexPath: indexPath) as! ProfilePostCell
-        let post = news[indexPath.row] as! PFObject
+        let post = news[indexPath.section] as! PFObject
             cell.posterView.file = post["media"] as? PFFile
             cell.posterView.loadInBackground()
-            //cell.captionLabel.text = post["caption"] as! String
         
             return cell
 
@@ -243,14 +235,16 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
-        if segue.identifier == "yay" {
+        if segue.identifier == "yay"
+        {
         let check2 = false
         let cell = sender as! UITableViewCell
         let indexPath = tableView.indexPathForCell(cell)
-        let post = news[(indexPath?.row)!]
+        let post = news[(indexPath?.section)!]
         let detailVC = segue.destinationViewController as! DetailViewController
         detailVC.post = post as! PFObject
-            detailVC.check = check2 as Bool}
+        detailVC.check = check2 as Bool
+        }
         
     }
     /*

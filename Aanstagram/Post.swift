@@ -18,7 +18,7 @@ class Post: NSObject
      - parameter caption: Caption text input by the user
      - parameter completion: Block to be executed after save operation is complete
      */
-    class func postUserImage(image: UIImage?, withCaption caption: String?, withCompletion completion: PFBooleanResultBlock?)
+    class func postUserImage(image: UIImage?, withCaption caption: String?, lc:Int, comm: [String], u: [String],withCompletion completion: PFBooleanResultBlock?)
     {
         // Create Parse object PFObject
         let post = PFObject(className: "Post")
@@ -27,8 +27,10 @@ class Post: NSObject
         post["media"] = getPFFileFromImage(image) // PFFile column type
         post["author"] = PFUser.currentUser() // Pointer column type that points to PFUser
         post["caption"] = caption
-        post["likesCount"] = 0
-        post["commentsCount"] = 0
+        post["likesCount"] = lc
+     //   post["commentsCount"] = comm.count
+        post["comments"] = comm as [String]
+        post["usersWhoComment"] = u as [String]
         //post["createdAt"] = post.createdAt
         //post["time"] = post.createdAt
         //print(post["time"])

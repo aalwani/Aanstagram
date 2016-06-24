@@ -26,6 +26,7 @@
 		3FC221111D19DFD90006CF0F /* InfiniteScrollActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC221101D19DFD90006CF0F /* InfiniteScrollActivityView.swift */; };
 		3FC221131D19FDE50006CF0F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC221121D19FDE50006CF0F /* DetailViewController.swift */; };
 		3FC221151D1A3B250006CF0F /* ProfilePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC221141D1A3B250006CF0F /* ProfilePostCell.swift */; };
+		3FEE58611D1CF13000599834 /* commentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEE58601D1CF13000599834 /* commentCell.swift */; };
 		F777C812E61BE3F1463435ED /* Pods_Aanstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADDD53AAE7743709DFD0D259 /* Pods_Aanstagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		3FC221101D19DFD90006CF0F /* InfiniteScrollActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfiniteScrollActivityView.swift; sourceTree = "<group>"; };
 		3FC221121D19FDE50006CF0F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		3FC221141D1A3B250006CF0F /* ProfilePostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePostCell.swift; sourceTree = "<group>"; };
+		3FEE58601D1CF13000599834 /* commentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = commentCell.swift; sourceTree = "<group>"; };
 		49B81282403346738EC79393 /* Pods-AanstagramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AanstagramUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AanstagramUITests/Pods-AanstagramUITests.release.xcconfig"; sourceTree = "<group>"; };
 		57284D5E93E2FCED566676DC /* Pods_AanstagramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AanstagramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A181124128D1C380248280B0 /* Pods-AanstagramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AanstagramTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AanstagramTests/Pods-AanstagramTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				3FC220CB1D18B8250006CF0F /* Post.swift */,
 				3FC220CE1D18EE540006CF0F /* PostCell.swift */,
 				3FC221101D19DFD90006CF0F /* InfiniteScrollActivityView.swift */,
+				3FEE58601D1CF13000599834 /* commentCell.swift */,
 			);
 			path = Aanstagram;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 				3FC221151D1A3B250006CF0F /* ProfilePostCell.swift in Sources */,
 				3FA3F99A1D188E3500364F5F /* AppDelegate.swift in Sources */,
 				3FC220C61D18A4F00006CF0F /* HomeViewController.swift in Sources */,
+				3FEE58611D1CF13000599834 /* commentCell.swift in Sources */,
 				3FC220CC1D18B8250006CF0F /* Post.swift in Sources */,
 				3F89CD5E1D1B830B003C0AE5 /* User.swift in Sources */,
 				3FC221131D19FDE50006CF0F /* DetailViewController.swift in Sources */,

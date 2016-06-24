@@ -189,7 +189,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let check = true
         let cell = sender as! UITableViewCell
         let indexPath = tableView.indexPathForCell(cell)
-        let post = postss[(indexPath?.row)!]
+        let post = postss[(indexPath?.section)!]
         let detailVC = segue.destinationViewController as! DetailViewController
         detailVC.post = post as! PFObject
         detailVC.check = check as Bool

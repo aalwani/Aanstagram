@@ -11,7 +11,9 @@ import MBProgressHUD
 
 class CaptureViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    
+    var lc: Int = 0
+    var c: [String] = []
+    var u: [String] = []
     @IBOutlet weak var makeProfilePicLabel: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var uploadNew: UIButton!
@@ -144,7 +146,7 @@ class CaptureViewController: UIViewController, UIImagePickerControllerDelegate, 
         {
             MBProgressHUD.showHUDAddedTo(self.view, animated: true)
             
-            Post.postUserImage(posterView.image, withCaption: captionText.text, withCompletion: { (success: Bool, error: NSError?) in
+            Post.postUserImage(posterView.image, withCaption: captionText.text, lc: lc, comm: c as [String], u: u as [String], withCompletion: { (success: Bool, error: NSError?) in
                 
                 // stop activity indicator
                 //self.activityIndicator.stopAnimating()
@@ -176,10 +178,6 @@ class CaptureViewController: UIViewController, UIImagePickerControllerDelegate, 
             if success
             {
                 self.performSegueWithIdentifier("ppSegue", sender: nil)
-//               let x = ProfileViewController()
-//                x.yayProfile = true
-            
-               //self.tabBarController?.selectedIndex = 2
                 
             } else
             {
