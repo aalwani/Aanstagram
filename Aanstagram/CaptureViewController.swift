@@ -8,6 +8,8 @@
 
 import UIKit
 import MBProgressHUD
+import ParseUI
+import Parse
 
 class CaptureViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     

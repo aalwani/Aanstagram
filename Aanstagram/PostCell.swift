@@ -13,6 +13,9 @@ import ParseUI
 class PostCell: UITableViewCell {
     
 
+    @IBOutlet weak var name: UILabel!
+   
+    @IBOutlet weak var picture: PFImageView!
     @IBOutlet weak var posterImageView: PFImageView!
     
     @IBOutlet weak var captionLabel: UILabel!

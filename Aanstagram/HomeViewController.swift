@@ -11,20 +11,30 @@ import Parse
 import ParseUI
 
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate {
-    let HeaderViewIdentifier = "TableViewHeaderView"
+    
+   let HeaderViewIdentifier = "TableViewHeaderView"
     var postss = []
+    var usersss: [PFObject] = []
     var infinite: Bool = false
     var isMoreDataLoading = false
     var loadingMoreView:InfiniteScrollActivityView?
     @IBOutlet weak var tableView: UITableView!
-
+    var s: PFUser = PFUser.currentUser()!
+    
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+      
+        
+        
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(refreshControlAction(_:)), forControlEvents: UIControlEvents.ValueChanged)
         let frame = CGRectMake(0, tableView.contentSize.height, tableView.bounds.size.width, InfiniteScrollActivityView.defaultHeight)
+
+        
+        
         loadingMoreView = InfiniteScrollActivityView(frame: frame)
         loadingMoreView!.hidden = true
         tableView.addSubview(loadingMoreView!)
@@ -94,13 +104,52 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cell.posterImageView.file = post["media"] as? PFFile
         cell.posterImageView.loadInBackground()
         cell.captionLabel.text = post["caption"] as! String
-        
+        var userr = post["author"] as! PFUser
+        s = userr
+        var v = userr.username
+        cell.name.text = v
 
-        
-        
+        call(v!, cell: cell)
+
         return cell
     }
     
+    func call(v : String, cell : PostCell)
+    {
+        print(v)
+        
+        let query = PFQuery(className: "User")
+        query.orderByDescending("createdAt")
+        query.whereKey("username", equalTo: v)
+        query.findObjectsInBackgroundWithBlock
+            { (us: [PFObject]?, error: NSError?) -> Void in
+                if let us = us
+                {
+                    self.usersss = us
+                    print(us)
+                    
+                    let u = self.usersss[0] as! PFObject
+                                       cell.picture.file = u["media"] as! PFFile
+                    cell.picture.loadInBackground()
+                    
+                    var x = cell.picture as UIImageView
+                    x.layer.cornerRadius = 30
+                    x.clipsToBounds = true
+                    
+                    
+                    
+                }
+                else
+                {
+                    print(error?.localizedDescription)
+                    print("sozz no pic 4 u")
+                }
+                
+                
+        }
+ 
+        
+    }
     
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
@@ -161,8 +210,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             let x = NSDateFormatter()
             x.dateFormat = "dd MMMM yyyy HH:mm"
             let t = x.stringFromDate(times!)
-        let author = post["author"] as! PFUser
-        header.textLabel!.text = author.username! + "                 " + t
+        header.textLabel!.text =  t
+        
         }
         return header
     }
@@ -176,16 +225,12 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     
     
-  
-    
-    
-    
-    
     
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
+        
         let check = true
         let cell = sender as! UITableViewCell
         let indexPath = tableView.indexPathForCell(cell)
@@ -193,6 +238,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let detailVC = segue.destinationViewController as! DetailViewController
         detailVC.post = post as! PFObject
         detailVC.check = check as Bool
+        
+        
     }
     
     

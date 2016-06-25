@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import Parse
+import ParseUI
 
 class commentCell: UITableViewCell {
 
+    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var prof: PFImageView!
     @IBOutlet weak var comment: UILabel!
     @IBOutlet weak var namei: UILabel!
     override func awakeFromNib() {

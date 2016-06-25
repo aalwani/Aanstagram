@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Username" textAlignment="natural" minimumFontSize="17" id="2jJ-C9-QQF">
-                                <rect key="frame" x="54" y="151" width="253" height="30"/>
+                                <rect key="frame" x="54" y="151" width="228" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.97987501654341547" green="1" blue="0.99915860905460985" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="0.028406202792127817" green="0.029447115384615419" blue="0.028862641792456255" alpha="1" colorSpace="calibratedRGB"/>
@@ -22,7 +22,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" id="2LE-o0-8Nz">
-                                <rect key="frame" x="54" y="213" width="253" height="30"/>
+                                <rect key="frame" x="54" y="213" width="228" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.98659636510954829" green="0.99457266186880022" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -64,6 +64,174 @@
                                     <action selector="onSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GvD-L7-RZw"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.45000000000000001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aanstagram" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kAJ-Zw-Yzj">
+                                <rect key="frame" x="49" y="512" width="292" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.20469936728477478" green="0.034873232245445251" blue="0.97743815183639526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="49"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="Gjb-o8-V3G">
+                                <rect key="frame" x="27" y="73" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="cAn-IP-u4D">
+                                <rect key="frame" x="59" y="73" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="z6l-nP-QhP">
+                                <rect key="frame" x="91" y="73" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="Gcn-oy-cQY">
+                                <rect key="frame" x="123" y="73" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="pUl-Za-xlr">
+                                <rect key="frame" x="155" y="73" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="zVR-lA-k7E">
+                                <rect key="frame" x="187" y="73" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="rjI-bz-CA8">
+                                <rect key="frame" x="219" y="73" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="3I3-4Z-S9Q">
+                                <rect key="frame" x="251" y="73" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="rT3-VJ-rRo">
+                                <rect key="frame" x="283" y="73" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="i2Y-0s-JWD">
+                                <rect key="frame" x="27" y="290" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="F1n-5Y-5Ly">
+                                <rect key="frame" x="59" y="290" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="0RE-ea-MMm">
+                                <rect key="frame" x="91" y="290" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="YoT-0m-Lpa">
+                                <rect key="frame" x="123" y="290" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="Yko-hO-LA3">
+                                <rect key="frame" x="155" y="290" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="tHQ-at-TKk">
+                                <rect key="frame" x="187" y="290" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="I0E-Md-wBg">
+                                <rect key="frame" x="219" y="290" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="8Ef-9N-0l0">
+                                <rect key="frame" x="251" y="290" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="xz8-OE-Ug4">
+                                <rect key="frame" x="283" y="290" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="jqe-wl-PvP">
+                                <rect key="frame" x="310" y="73" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="waG-VQ-264">
+                                <rect key="frame" x="310" y="290" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="Ojq-pA-uNB">
+                                <rect key="frame" x="27" y="507" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="Maa-ri-KRp">
+                                <rect key="frame" x="59" y="507" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="Lhd-TX-Dfk">
+                                <rect key="frame" x="91" y="507" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="U5W-FV-Gvc">
+                                <rect key="frame" x="123" y="507" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="5Fw-6d-651">
+                                <rect key="frame" x="155" y="507" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="XGD-2Z-cL7">
+                                <rect key="frame" x="187" y="507" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="fKA-Pr-D8K">
+                                <rect key="frame" x="219" y="507" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="fj8-jy-zA3">
+                                <rect key="frame" x="251" y="507" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="ntd-Ka-Onr">
+                                <rect key="frame" x="283" y="507" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="wHO-pJ-b9o">
+                                <rect key="frame" x="310" y="507" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="5Cy-o8-bID">
+                                <rect key="frame" x="28" y="616" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="0nl-B5-9rE">
+                                <rect key="frame" x="60" y="616" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="wnV-FZ-3kx">
+                                <rect key="frame" x="92" y="616" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="gG5-KX-4et">
+                                <rect key="frame" x="124" y="616" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="aXl-CT-APm">
+                                <rect key="frame" x="156" y="616" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="JPn-8c-asE">
+                                <rect key="frame" x="188" y="616" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="e4x-nD-Tty">
+                                <rect key="frame" x="220" y="616" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="SvK-KU-5at">
+                                <rect key="frame" x="252" y="616" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="MUY-xs-76V">
+                                <rect key="frame" x="284" y="616" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="iconmonstr-star-1-48" id="e8h-FM-xEb">
+                                <rect key="frame" x="311" y="616" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.51952030422786899" green="0.76989296657842343" blue="0.85335636138916016" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
@@ -288,7 +456,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="47" sectionHeaderHeight="28" sectionFooterHeight="28" id="bnJ-JS-hGQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="465"/>
+                                        <rect key="frame" x="0.0" y="-54" width="375" height="519"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <prototypes>
@@ -299,15 +467,19 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="46.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DTP-IH-Q5b">
-                                                            <rect key="frame" x="0.0" y="0.0" width="59" height="38.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Jva-YW-JjT">
+                                                            <rect key="frame" x="123" y="-4" width="244" height="46.5"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Jva-YW-JjT">
-                                                            <rect key="frame" x="77" y="-4" width="290" height="46.5"/>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Mgv-ph-N2v" customClass="PFImageView">
+                                                            <rect key="frame" x="8" y="0.0" width="38" height="36.5"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DTP-IH-Q5b">
+                                                            <rect key="frame" x="56" y="5" width="59" height="26.5"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -319,6 +491,7 @@
                                                 <connections>
                                                     <outlet property="comment" destination="Jva-YW-JjT" id="MxT-or-mIL"/>
                                                     <outlet property="namei" destination="DTP-IH-Q5b" id="80X-mc-5ji"/>
+                                                    <outlet property="prof" destination="Mgv-ph-N2v" id="NDQ-Um-diq"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -334,23 +507,16 @@
                                 <rect key="frame" x="0.0" y="239" width="375" height="151"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o4o-fV-zW8">
-                                        <rect key="frame" x="258" y="33" width="96" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1tB-o1-EHc">
                                         <rect key="frame" x="229" y="-1" width="146" height="30.5"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Tap to Like"/>
+                                        <state key="normal" image="iconmonstr-thumb-10-48"/>
                                         <connections>
                                             <action selector="tapLike:" destination="oXQ-4K-zGl" eventType="touchUpInside" id="BH3-1C-V8a"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TimeStamp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kxm-Nk-FWj">
-                                        <rect key="frame" x="0.0" y="0.0" width="147" height="30"/>
+                                        <rect key="frame" x="74" y="0.0" width="147" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -364,15 +530,15 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comment Here" textAlignment="natural" minimumFontSize="17" id="exC-mh-NMl">
-                                        <rect key="frame" x="0.0" y="113" width="221" height="30"/>
+                                        <rect key="frame" x="0.0" y="113" width="304" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4rD-bs-joK">
-                                        <rect key="frame" x="242" y="113" width="120" height="30"/>
+                                        <rect key="frame" x="298" y="113" width="64" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Submit Comment"/>
+                                        <state key="normal" image="iconmonstr-speech-bubble-2-48"/>
                                         <connections>
                                             <action selector="submitComment:" destination="oXQ-4K-zGl" eventType="touchUpInside" id="dD1-Sh-v5Y"/>
                                         </connections>
@@ -385,26 +551,33 @@
                                             <segue destination="xai-2O-IP3" kind="push" identifier="bye" id="NKd-hf-n8x"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bPY-oj-Ule">
-                                        <rect key="frame" x="0.0" y="33" width="61" height="26"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bPY-oj-Ule">
+                                        <rect key="frame" x="69" y="33" width="124" height="26"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconmonstr-user-6-48" id="cBm-J6-wTB" customClass="PFImageView">
-                                        <rect key="frame" x="160" y="8" width="61" height="55"/>
+                                        <rect key="frame" x="0.0" y="4" width="61" height="55"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="0.95423859658901167" blue="0.78301754285559177" alpha="1" colorSpace="calibratedRGB"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Nvd-u1-kEg">
-                                        <rect key="frame" x="160" y="8" width="61" height="51"/>
+                                        <rect key="frame" x="0.0" y="1" width="61" height="59"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="prof:" destination="oXQ-4K-zGl" eventType="touchUpInside" id="wD7-9W-Dao"/>
                                             <segue destination="xai-2O-IP3" kind="push" identifier="bye2" id="Saa-Sd-r5C"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o4o-fV-zW8">
+                                        <rect key="frame" x="254" y="33" width="96" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -438,34 +611,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="231" sectionHeaderHeight="28" sectionFooterHeight="28" id="pEr-Zx-pb6">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="305" sectionHeaderHeight="28" sectionFooterHeight="28" id="pEr-Zx-pb6">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="231" id="uHV-ng-df6" customClass="PostCell" customModule="Aanstagram" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="231"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="305" id="uHV-ng-df6" customClass="PostCell" customModule="Aanstagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="375" height="305"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uHV-ng-df6" id="0GL-1d-f8i">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="230.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="304.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kHV-cw-KfL">
-                                                    <rect key="frame" x="0.0" y="201" width="342" height="29.5"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="VGc-sM-PXc" customClass="PFImageView">
+                                                    <rect key="frame" x="0.0" y="62" width="375" height="202"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="1" green="0.68364734535987326" blue="0.51995265872033136" alpha="1" colorSpace="calibratedRGB"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconmonstr-user-6-120" id="jk3-Zm-KDf" customClass="PFImageView">
+                                                    <rect key="frame" x="8" y="0.0" width="60" height="58"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wY1-MZ-ovF">
+                                                    <rect key="frame" x="88" y="22" width="90" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="VGc-sM-PXc" customClass="PFImageView">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="202"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kHV-cw-KfL">
+                                                    <rect key="frame" x="0.0" y="263" width="342" height="29.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="1" green="0.68364734535987326" blue="0.51995265872033136" alpha="1" colorSpace="calibratedRGB"/>
-                                                </imageView>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="captionLabel" destination="kHV-cw-KfL" id="VlL-Ku-KWZ"/>
+                                            <outlet property="name" destination="wY1-MZ-ovF" id="29f-8X-0hy"/>
+                                            <outlet property="picture" destination="jk3-Zm-KDf" id="kN4-df-Z6h"/>
                                             <outlet property="posterImageView" destination="VGc-sM-PXc" id="44T-1H-cBI"/>
                                             <segue destination="oXQ-4K-zGl" kind="push" id="796-Ds-huL"/>
                                         </connections>
@@ -550,12 +736,15 @@
     <resources>
         <image name="camera" width="24" height="24"/>
         <image name="home" width="24" height="24"/>
+        <image name="iconmonstr-speech-bubble-2-48" width="24" height="24"/>
+        <image name="iconmonstr-star-1-48" width="24" height="24"/>
+        <image name="iconmonstr-thumb-10-48" width="24" height="24"/>
         <image name="iconmonstr-user-6-120" width="40" height="40"/>
         <image name="iconmonstr-user-6-48" width="24" height="24"/>
         <image name="profile" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Saa-Sd-r5C"/>
-        <segue reference="EGl-eo-UOl"/>
+        <segue reference="796-Ds-huL"/>
     </inferredMetricsTieBreakers>
 </document>

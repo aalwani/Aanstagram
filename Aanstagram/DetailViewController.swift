@@ -56,20 +56,26 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
       likesLabel.text = "Likes: " + String(l)
         
         
-        
+         
     
         let query = PFQuery(className: "User")
         query.orderByDescending("createdAt")
         query.whereKey("username", equalTo: usern)
+       
         query.findObjectsInBackgroundWithBlock
             { (us: [PFObject]?, error: NSError?) -> Void in
                 if let us = us
                 {
+                    
+                    //print(us)
                     self.usersss = us
                     let u = self.usersss[0] as! PFObject
                     self.profPic.file = u["media"] as! PFFile
                     self.profPic.loadInBackground()
-                    
+                    var x = self.profPic as UIImageView
+                    x.layer.cornerRadius = 30
+                    x.clipsToBounds = true
+
                     
                 }
                 else
@@ -108,7 +114,8 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
     @IBAction func submitComment(sender: AnyObject)
 {
     s = PFUser.currentUser()!
-    var u = s.username as String!
+    var d = s.username! as String
+    
     let commen = String(commentFieldf.text!) ?? ""
     if commen == ""
     {
@@ -122,7 +129,7 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
         c = post["comments"] as! [String]
         c.append(commen)
         uu = post["usersWhoComment"] as! [String]
-        uu.append(u)
+        uu.append(d)
         post["comments"] = c as [String]
         post["usersWhoComment"] = uu as [String]
         var completion: PFBooleanResultBlock =
@@ -137,7 +144,6 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
                 print("There was an error: \(error?.localizedDescription)")
             }
         }
-        print(post)
         self.post.saveInBackgroundWithBlock(completion)
         commentFieldf.text = ""
         self.viewDidLoad()
@@ -203,7 +209,12 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
+        if let x = post["comments"]
+        {
         return post["comments"].count
+        }
+        else
+        {return 0}
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
@@ -213,6 +224,37 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
         var y: [String] = post["usersWhoComment"] as! [String]
         cell.namei.text = y[indexPath.row] as String
         cell.comment.text = x[indexPath.row] as String
+        
+        
+        
+
+        let query = PFQuery(className: "User")
+        query.orderByDescending("createdAt")
+        query.whereKey("username", equalTo: y[indexPath.row])
+        query.findObjectsInBackgroundWithBlock
+            { (us: [PFObject]?, error: NSError?) -> Void in
+                if let us = us
+                {
+                    self.usersss = us
+                    let u = self.usersss[0] as! PFObject
+                    cell.prof.file = u["media"] as! PFFile
+                    cell.prof.loadInBackground()
+                    var xw = cell.prof as UIImageView
+                    xw.layer.cornerRadius = 18
+                    xw.clipsToBounds = true
+                    
+                }
+                else
+                {
+                    print(error?.localizedDescription)
+                    print("sozz no pic 4 u")
+                }
+               
+                
+                
+                
+        }
+        
         return cell
     }
     
