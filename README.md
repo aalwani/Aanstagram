@@ -45,11 +45,11 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/pMdRt5k.gif',
+<img src='http://i.imgur.com/rsrP2ox.gif' title='Infinite Scroll, Log in Log Out' width='' alt='Video Walkthrough' />
+<img src= 'http://i.imgur.com/RxcjE8y.gif'title='Detail View, click on Profile Pic' width='' alt='Video Walkthrough' />
+<img src= 'http://i.imgur.com/lVPomvs.gif' title='Comment, Like' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/KQesQr0.gif'title='Upload Picture / make profile pic' width='' alt='Video Walkthrough' />
 
-'http://i.imgur.com/RxcjE8y.gif',
-'http://i.imgur.com/KQesQr0.gif',
-'http://i.imgur.com/lVPomvs.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
